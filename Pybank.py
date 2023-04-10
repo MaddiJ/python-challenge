@@ -39,7 +39,7 @@ print(f"Total: ${sum(total_profit)}")
 print(f"Greatest Increase in Profits: {total_months[max_increase_month]} (${(str(max_increase_value))})")
 print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} (${(str(max_decrease_value))})")
 #Output files
-output_file = r"C:\Users\jmsmi\OneDrive\Desktop\Projects\python-challenge\analysis"
+output_file = os.path.join('..', directory, 'analysis', 'output.txt')
 with open(output_file, "w") as file:
     file.write("Analysis\n")
     file.write("-----------------------------\n")
