@@ -1,7 +1,7 @@
 # import file
 import os
 import csv
-input_file  = \Resources\budget_data.csv"
+input_file  = "\Resources\budget_data.csv"
 csvpath = os.path.join('..','Resources','budget_data.csv')
 
 
