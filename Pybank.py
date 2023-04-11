@@ -1,8 +1,10 @@
 # import file
 import os
 import csv
-input_file  = r"C:\Users\jmsmi\OneDrive\Documents\School\Python\Starter_Code (5)\Starter_Code\PyBank\Resources\budget_data.csv"
+input_file  = \Resources\budget_data.csv"
 csvpath = os.path.join('..','Resources','budget_data.csv')
+
+
 #list your variables
 # Create empty lists to iterate through specific rows for the following variables
 total_months = []
