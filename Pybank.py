@@ -1,8 +1,10 @@
+#TEst
 # import file
 import os
 import csv
-input_file  = "\Resources\budget_data.csv"
-csvpath = os.path.join('..','Resources','budget_data.csv')
+
+input_file = ("..\PyBank\Resources\Pybank.py")
+csvpath = os.path.join("..","Resources","budget_data.csv")
 
 
 #list your variables
@@ -10,8 +12,9 @@ csvpath = os.path.join('..','Resources','budget_data.csv')
 total_months = []
 total_profit = []
 monthly_profit_change = []
+
 # Open csv in default read mode with context manager
-with open(input_file,newline="", encoding="utf-8") as budget:
+with open(csvpath, newline="", encoding="utf-8") as budget:
      # Store the contents of budget_data.csv in the variable csvreader
     csvreader = csv.reader(budget,delimiter=",")
     # Skip the header labels to iterate with the values
@@ -41,7 +44,7 @@ print(f"Total: ${sum(total_profit)}")
 print(f"Greatest Increase in Profits: {total_months[max_increase_month]} (${(str(max_increase_value))})")
 print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} (${(str(max_decrease_value))})")
 #Output files
-output_file = os.path.join('..', directory, 'analysis', 'output.txt')
+output_file = os.path.join("..", "analysis", "output.txt")
 with open(output_file, "w") as file:
     file.write("Analysis\n")
     file.write("-----------------------------\n")
