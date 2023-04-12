@@ -13,7 +13,7 @@ total_months=[]
 total_profit= []
 monthlyprofitchange= [] 
 
-csvpath = "./Resources/budget_data.csv"
+
 # Open csv in default read mode with context manager
 with open(csvpath, "r") as csvfile:
 
